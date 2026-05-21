@@ -30,21 +30,10 @@
             overflow-x: hidden;
         }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
 
-        ::-webkit-scrollbar-track {
-            background: var(--bg);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--accent);
-            border-radius: 4px;
-        }
-
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -86,17 +75,10 @@
             font-size: 0.95rem;
         }
 
-        .nav-links a:hover {
-            color: var(--accent);
-        }
+        .nav-links a:hover { color: var(--accent); }
 
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-        }
+        @media (max-width: 768px) { .nav-links { display: none; } }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -158,27 +140,15 @@
             font-size: 1rem;
         }
 
-        .btn-primary {
-            background: var(--accent);
-            color: var(--bg);
-        }
-
+        .btn-primary { background: var(--accent); color: var(--bg); }
         .btn-primary:hover {
             background: var(--accent-light);
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(107, 158, 255, 0.3);
         }
 
-        .btn-secondary {
-            background: transparent;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-        }
-
-        .btn-secondary:hover {
-            background: var(--accent);
-            color: var(--bg);
-        }
+        .btn-secondary { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+        .btn-secondary:hover { background: var(--accent); color: var(--bg); }
 
         .social-links {
             display: flex;
@@ -209,17 +179,9 @@
             transform: translateY(-5px);
         }
 
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-        /* Sections */
-        section {
-            padding: 5rem 2rem;
-        }
+        section { padding: 5rem 2rem; }
 
         .section-title {
             font-size: 2.5rem;
@@ -242,10 +204,7 @@
             border-radius: 2px;
         }
 
-        /* About Section */
-        .about {
-            background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%);
-        }
+        .about { background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%); }
 
         .about-content {
             display: grid;
@@ -275,26 +234,13 @@
             text-align: center;
         }
 
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
+        .stat-label { color: var(--text-muted); font-size: 0.95rem; }
 
         @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+            .about-content { grid-template-columns: 1fr; gap: 2rem; }
         }
 
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -315,17 +261,9 @@
             box-shadow: 0 10px 30px rgba(107, 158, 255, 0.1);
         }
 
-        .skill-category h3 {
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
+        .skill-category h3 { color: var(--accent); margin-bottom: 1.5rem; font-size: 1.3rem; }
 
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 0.8rem; }
 
         .skill-tag {
             background: rgba(107, 158, 255, 0.1);
@@ -337,15 +275,9 @@
             transition: all 0.3s ease;
         }
 
-        .skill-tag:hover {
-            background: var(--accent);
-            color: var(--bg);
-        }
+        .skill-tag:hover { background: var(--accent); color: var(--bg); }
 
-        /* Experience Section */
-        .experience {
-            background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%);
-        }
+        .experience { background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%); }
 
         .experience-item {
             background: var(--bg-card);
@@ -371,27 +303,11 @@
             gap: 1rem;
         }
 
-        .experience-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-        }
+        .experience-title { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+        .experience-company { color: var(--accent); font-weight: 600; }
+        .experience-date { color: var(--text-muted); font-size: 0.9rem; }
 
-        .experience-company {
-            color: var(--accent);
-            font-weight: 600;
-        }
-
-        .experience-date {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .experience-description {
-            color: var(--text-muted);
-            line-height: 1.8;
-            margin: 1rem 0;
-        }
+        .experience-description { color: var(--text-muted); line-height: 1.8; margin: 1rem 0; }
 
         .experience-highlights {
             margin-top: 1rem;
@@ -406,17 +322,9 @@
             position: relative;
         }
 
-        .highlight::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
+        .highlight::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
 
-        /* Projects Section */
-        .projects {
-            background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%);
-        }
+        .projects { background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%); }
 
         .projects-grid {
             display: grid;
@@ -444,29 +352,12 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .project-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 0.5rem;
-        }
+        .project-title { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+        .project-description { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
-        .project-description {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
+        .project-content { padding: 2rem; }
 
-        .project-content {
-            padding: 2rem;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 1.5rem;
-        }
+        .project-tech { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
 
         .tech-tag {
             background: rgba(107, 158, 255, 0.1);
@@ -477,15 +368,9 @@
             border: 1px solid rgba(107, 158, 255, 0.2);
         }
 
-        /* Education Section */
-        .education {
-            background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%);
-        }
+        .education { background: linear-gradient(135deg, rgba(107, 158, 255, 0.05) 0%, rgba(20, 29, 59, 0.5) 100%); }
 
-        .education-items {
-            display: grid;
-            gap: 2rem;
-        }
+        .education-items { display: grid; gap: 2rem; }
 
         .education-item {
             background: var(--bg-card);
@@ -494,41 +379,14 @@
             border: 1px solid var(--border);
         }
 
-        .degree {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 0.5rem;
-        }
+        .degree { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+        .university { color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
+        .gpa { color: var(--success); font-weight: 600; margin-bottom: 1rem; }
 
-        .university {
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+        .coursework { color: var(--text-muted); margin-top: 1rem; }
+        .coursework-title { font-weight: 600; margin-bottom: 0.5rem; }
 
-        .gpa {
-            color: var(--success);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .coursework {
-            color: var(--text-muted);
-            margin-top: 1rem;
-        }
-
-        .coursework-title {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .courses-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 0.8rem;
-        }
+        .courses-list { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.8rem; }
 
         .course {
             background: rgba(107, 158, 255, 0.1);
@@ -539,29 +397,15 @@
             border: 1px solid rgba(107, 158, 255, 0.2);
         }
 
-        /* Contact Section */
         .contact {
             background: linear-gradient(135deg, rgba(107, 158, 255, 0.1) 0%, rgba(20, 29, 59, 0) 100%);
             text-align: center;
         }
 
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+        .contact-content { max-width: 600px; margin: 0 auto; }
+        .contact-text { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; }
 
-        .contact-text {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
+        .contact-info { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem; }
 
         .contact-item {
             display: flex;
@@ -571,22 +415,10 @@
             flex-wrap: wrap;
         }
 
-        .contact-item a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+        .contact-item a { color: var(--accent); text-decoration: none; transition: color 0.3s ease; }
+        .contact-item a:hover { color: var(--accent-light); }
+        .contact-label { color: var(--text-muted); min-width: 100px; }
 
-        .contact-item a:hover {
-            color: var(--accent-light);
-        }
-
-        .contact-label {
-            color: var(--text-muted);
-            min-width: 100px;
-        }
-
-        /* Footer */
         footer {
             background: rgba(20, 29, 59, 0.5);
             border-top: 1px solid var(--border);
@@ -595,67 +427,24 @@
             color: var(--text-muted);
         }
 
-        /* Animations */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .fade-in {
-            animation: fadeInUp 0.6s ease forwards;
-        }
+        .fade-in { animation: fadeInUp 0.6s ease forwards; }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            nav {
-                padding: 0.75rem 0;
-            }
-
-            .nav-container {
-                padding: 0 1rem;
-            }
-
-            .hero {
-                margin-top: 80px;
-                min-height: auto;
-                padding: 3rem 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 3rem 1rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
+            nav { padding: 0.75rem 0; }
+            .nav-container { padding: 0 1rem; }
+            .hero { margin-top: 80px; min-height: auto; padding: 3rem 1rem; }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 2rem; }
+            section { padding: 3rem 1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .skills-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -679,10 +468,10 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Abinesh Thavendrarajah</h1>
-            <p class="hero-subtitle">Backend Engineer | Distributed Systems Enthusiast</p>
+            <p class="hero-subtitle">Backend Engineer</p>
             <p class="hero-description">
-                Building scalable, resilient backend systems with expertise in Java, Spring Boot, and cloud technologies. 
-                Passionate about solving complex problems and optimizing system performance.
+                Building scalable, resilient backend systems with expertise in Java, Spring Boot, and cloud technologies.
+                Passionate about solving complex problems, optimizing system performance, and modernizing legacy platforms.
             </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -691,7 +480,7 @@
             <div class="social-links">
                 <a href="https://github.com/abinesht" target="_blank" title="GitHub">GH</a>
                 <a href="https://linkedin.com/in/abinesht" target="_blank" title="LinkedIn">LI</a>
-                <a href="mailto:contact@abinesh.dev" title="Email">✉</a>
+                <a href="mailto:abinesht12@gmail.com" title="Email">✉</a>
             </div>
         </div>
     </section>
@@ -703,35 +492,37 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a software engineer with a passion for building robust backend systems that scale. 
-                        With a strong foundation in computer science and hands-on experience in enterprise development, 
-                        I specialize in designing and implementing distributed systems that handle millions of transactions.
+                        I'm a software engineer with nearly 2 years of industry experience building and maintaining
+                        scalable backend systems using Java, Spring Boot, and Python. I hold a BSc. in Computer Science
+                        and Engineering from the University of Moratuwa with a CGPA of 3.78.
                     </p>
                     <p>
-                        My journey includes experience at industry-leading companies where I've worked on critical backend 
-                        services, cloud infrastructure, and machine learning projects. I'm driven by continuous learning 
-                        and staying at the forefront of modern backend technologies.
+                        At Cloud Solutions International, I re-architected the pharmacy module backend, designed unified
+                        order contracts, standardized REST APIs, implemented BFF layers, and built data migration scripts
+                        to modernize a legacy system. I've also explored Kafka and Kubernetes for system scalability and
+                        resilience.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                        or mentoring junior developers.
+                        Outside of backend work, I have hands-on experience with NLP, deep learning, and computer vision
+                        from my internship and final-year R&D project. When I'm not coding, I play chess — I'm an
+                        internationally rated player with a rating of 1640.
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-box">
-                        <div class="stat-number">5+</div>
+                        <div class="stat-number">~2</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-number">20+</div>
+                        <div class="stat-number">10+</div>
                         <div class="stat-label">Projects Delivered</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-number">10+</div>
+                        <div class="stat-number">15+</div>
                         <div class="stat-label">Technologies</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-number">3.8</div>
+                        <div class="stat-number">3.78</div>
                         <div class="stat-label">GPA</div>
                     </div>
                 </div>
@@ -749,65 +540,65 @@
                     <div class="skill-list">
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">GraphQL</span>
-                        <span class="skill-tag">JDBC</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">BFF</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
+                    <h3>DevOps & Cloud</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">NGINX</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Databases</h3>
                     <div class="skill-list">
                         <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Oracle</span>
                         <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">DynamoDB</span>
-                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Liquibase</span>
+                        <span class="skill-tag">SQL Query Optimization</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Distributed Systems</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Message Queues</span>
                         <span class="skill-tag">Apache Kafka</span>
-                        <span class="skill-tag">Load Balancing</span>
-                        <span class="skill-tag">Caching</span>
+                        <span class="skill-tag">API Gateway Patterns</span>
+                        <span class="skill-tag">Elastic APM</span>
                         <span class="skill-tag">Event-Driven</span>
-                        <span class="skill-tag">Scaling</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>ML & Data</h3>
+                    <h3>ML & Data Science</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">ML Pipeline</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">HuggingFace</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <h3>Testing & Tools</h3>
                     <div class="skill-list">
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Linux</span>
                         <span class="skill-tag">JUnit</span>
+                        <span class="skill-tag">Mockito</span>
+                        <span class="skill-tag">Testcontainers</span>
                         <span class="skill-tag">JIRA</span>
-                        <span class="skill-tag">Postman</span>
                     </div>
                 </div>
             </div>
@@ -815,63 +606,63 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="experience-section" id="experience">
+    <section class="experience" id="experience">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            
+
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">Senior Backend Engineer</div>
-                        <div class="experience-company">Tech Company</div>
+                        <div class="experience-title">Software Engineer</div>
+                        <div class="experience-company">Cloud Solutions International</div>
                     </div>
-                    <div class="experience-date">2023 - Present</div>
+                    <div class="experience-date">Jun 2024 – Present</div>
                 </div>
                 <div class="experience-description">
-                    Leading design and implementation of scalable microservices architecture serving millions of users.
+                    Working on backend development to modernize a healthcare pharmacy platform, designing scalable APIs and infrastructure.
                 </div>
                 <div class="experience-highlights">
-                    <div class="highlight">Designed and implemented event-driven architecture using Apache Kafka</div>
-                    <div class="highlight">Reduced API response time by 45% through caching optimization</div>
-                    <div class="highlight">Mentored 3+ junior developers and established backend best practices</div>
-                    <div class="highlight">Managed infrastructure as code using Terraform across multiple AWS regions</div>
+                    <div class="highlight">Re-architected the pharmacy module backend using Spring Boot — designed a unified order contract, standardized REST APIs, optimized database queries, implemented a BFF layer, and developed data migration scripts for a smooth legacy transition.</div>
+                    <div class="highlight">Researched and implemented strategies for improving system scalability and resilience using Kafka and Kubernetes.</div>
+                    <div class="highlight">Designed and developed a reusable tool in Django to handle structured export/import operations across environments with data integrity, validation, and rollback support.</div>
+                    <div class="highlight">Built a mock server to simulate NPHIES API interactions, enabling faster development and integration testing without dependency on external systems.</div>
+                    <div class="highlight">Implemented a BFF layer using Node.js and Express.js to aggregate multiple microservices and reduce client latency.</div>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">Backend Engineer</div>
-                        <div class="experience-company">Enterprise Solutions Inc.</div>
+                        <div class="experience-title">Machine Learning Engineering Intern</div>
+                        <div class="experience-company">Insighture</div>
                     </div>
-                    <div class="experience-date">2021 - 2023</div>
+                    <div class="experience-date">Jan 2023 – Jun 2023</div>
                 </div>
                 <div class="experience-description">
-                    Developed and maintained core backend services processing 100M+ transactions daily.
+                    Worked on NLP pipelines, classification models, and LLM-based solutions for text analysis and anomaly detection tasks.
                 </div>
                 <div class="experience-highlights">
-                    <div class="highlight">Built Spring Boot microservices handling high-volume transaction processing</div>
-                    <div class="highlight">Implemented comprehensive monitoring and alerting using CloudWatch</div>
-                    <div class="highlight">Optimized database queries reducing load by 30%</div>
-                    <div class="highlight">Established CI/CD pipeline with Jenkins, reducing deployment time by 50%</div>
+                    <div class="highlight">Developed NLP pipelines using SpaCy for Named Entity Recognition and Hugging Face Transformers for Question Answering models.</div>
+                    <div class="highlight">Built multi-label and multi-class classification models using PyTorch for text analysis tasks.</div>
+                    <div class="highlight">Experimented with Large Language Models and implemented vector datastore-based approaches to address token limitation challenges.</div>
+                    <div class="highlight">Conducted research on time-series forecasting and anomaly detection techniques.</div>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">ML Intern</div>
-                        <div class="experience-company">AI Research Lab</div>
+                        <div class="experience-title">Visiting Teaching Assistant – CS1033</div>
+                        <div class="experience-company">Department of CSE, University of Moratuwa</div>
                     </div>
-                    <div class="experience-date">2020 - 2021</div>
+                    <div class="experience-date">Aug 2023 – Oct 2023</div>
                 </div>
                 <div class="experience-description">
-                    Developed machine learning models and data analysis pipelines for predictive analytics.
+                    Supported the Programming Fundamentals course by mentoring students and helping design lab exercises.
                 </div>
                 <div class="experience-highlights">
-                    <div class="highlight">Built TensorFlow models achieving 92% accuracy for classification tasks</div>
-                    <div class="highlight">Created data preprocessing pipelines using Python and Pandas</div>
-                    <div class="highlight">Documented research findings in technical reports</div>
+                    <div class="highlight">Guided students through lab sessions on core programming concepts.</div>
+                    <div class="highlight">Contributed to designing programming problems and exercises for the course.</div>
                 </div>
             </div>
         </div>
@@ -884,84 +675,94 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-title">Distributed Cache System</div>
+                        <div class="project-title">Pharmacy Module Revamp</div>
                         <div class="project-description">
-                            High-performance, distributed caching layer for microservices architecture.
+                            Backend modernization of a healthcare pharmacy system with unified APIs and migration scripts.
                         </div>
                     </div>
                     <div class="project-content">
                         <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-                            Built a distributed caching system using Redis and Memcached that reduced database load by 60% 
-                            and improved application latency by 40%.
+                            Developed backend features to modernize the pharmacy module, including a unified order contract,
+                            optimized queries, standardized REST APIs, and data migration scripts for a smooth legacy transition.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Redis</span>
                             <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Real-time Data Pipeline</div>
-                        <div class="project-description">
-                            Event streaming and processing system for real-time analytics.
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-                            Designed and implemented a real-time data pipeline using Apache Kafka handling 500K events/second 
-                            with sub-second latency.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Apache Kafka</span>
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Microservices Architecture</div>
-                        <div class="project-description">
-                            Scalable microservices platform with service discovery and load balancing.
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-                            Architected and deployed a microservices platform using Kubernetes orchestrating 50+ services 
-                            with automated scaling.
-                        </p>
-                        <div class="project-tech">
+                            <span class="tech-tag">Oracle</span>
+                            <span class="tech-tag">Liquibase</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Terraform</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-title">ML Prediction Model</div>
+                        <div class="project-title">In-Air Signature</div>
                         <div class="project-description">
-                            Deep learning model for predictive analytics and forecasting.
+                            Final Year R&D project — innovative in-air signature authentication system using 2D/3D hand movement analysis.
                         </div>
                     </div>
                     <div class="project-content">
                         <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-                            Developed a TensorFlow-based neural network achieving 94% accuracy for time-series prediction 
-                            with real-time inference capabilities.
+                            Developed an in-air signature authentication system addressing intermittent spatial segmentation challenges
+                            for non-continuous signatures, using both 2D and 3D camera approaches and an in-house dataset.
+                            Recognized at the National ICT Awards 2024.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">TensorFlow</span>
                             <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Google Mediapipe</span>
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Leap Motion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Resume.AI</div>
+                        <div class="project-description">
+                            NLP-based automated resume parser for candidate extraction, role prediction, and ranking.
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                            Developed an NLP-based system to automatically extract candidate information from CVs,
+                            predict suitable job roles and tech stacks, and rank candidates accordingly.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">SpaCy</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Interactive Dashboard with Churn Prediction</div>
+                        <div class="project-description">
+                            Telecom customer churn prediction model with an interactive Tableau dashboard.
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                            Built a machine learning model to predict whether a specific telecom customer will churn,
+                            integrated with an interactive Tableau dashboard for visualization and business insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
                             <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">NumPy</span>
                         </div>
                     </div>
                 </div>
@@ -975,32 +776,31 @@
             <h2 class="section-title">Education</h2>
             <div class="education-items">
                 <div class="education-item">
-                    <div class="degree">Bachelor of Science in Computer Science</div>
-                    <div class="university">State University</div>
-                    <div class="gpa">GPA: 3.8/4.0</div>
+                    <div class="degree">BSc. Eng. (Hons.) in Computer Science and Engineering</div>
+                    <div class="university">University of Moratuwa</div>
+                    <div class="gpa">CGPA: 3.78 | Dean's List — 1st, 2nd, 3rd, 4th & 8th Semesters</div>
                     <div class="coursework">
                         <div class="coursework-title">Relevant Coursework:</div>
                         <div class="courses-list">
-                            <span class="course">Data Structures</span>
-                            <span class="course">Algorithms</span>
-                            <span class="course">Database Systems</span>
-                            <span class="course">Operating Systems</span>
-                            <span class="course">Distributed Systems</span>
-                            <span class="course">Machine Learning</span>
-                            <span class="course">System Design</span>
-                            <span class="course">Cloud Computing</span>
+                            <span class="course">Data Structures & Algorithms (A+)</span>
+                            <span class="course">OOP (A)</span>
+                            <span class="course">Database Systems (A)</span>
+                            <span class="course">Operating Systems (A)</span>
+                            <span class="course">Machine Learning (A)</span>
+                            <span class="course">Deep Neural Networks (A)</span>
+                            <span class="course">Computer Vision (A+)</span>
+                            <span class="course">Big Data Analytics (A)</span>
+                            <span class="course">Graph Theory for Computing (A)</span>
+                            <span class="course">Applied Statistics (A)</span>
+                            <span class="course">Linear Algebra (A+)</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="education-item">
-                    <div class="degree">Certifications</div>
-                    <div class="university">Professional Development</div>
-                    <div style="color: var(--text-muted); margin-top: 1rem;">
-                        <div style="margin-bottom: 0.8rem;">AWS Certified Solutions Architect - Professional</div>
-                        <div style="margin-bottom: 0.8rem;">Kubernetes Application Developer (CKAD)</div>
-                        <div>Google Cloud Associate Cloud Engineer</div>
-                    </div>
+                    <div class="degree">Advanced Level — Physical Science</div>
+                    <div class="university">J/Hartley College</div>
+                    <div class="gpa">2A, B — Island Rank 191</div>
                 </div>
             </div>
         </div>
@@ -1012,13 +812,17 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <p class="contact-text">
-                    I'm always interested in hearing about new projects and opportunities. 
+                    I'm always open to hearing about new projects and opportunities.
                     Feel free to reach out if you'd like to collaborate or just chat!
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <span class="contact-label">Email:</span>
-                        <a href="mailto:contact@abinesh.dev">contact@abinesh.dev</a>
+                        <a href="mailto:abinesht12@gmail.com">abinesht12@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone:</span>
+                        <span style="color: var(--text-muted);">(+94) 768 432 752</span>
                     </div>
                     <div class="contact-item">
                         <span class="contact-label">GitHub:</span>
@@ -1028,19 +832,22 @@
                         <span class="contact-label">LinkedIn:</span>
                         <a href="https://linkedin.com/in/abinesht" target="_blank">linkedin.com/in/abinesht</a>
                     </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location:</span>
+                        <span style="color: var(--text-muted);">Colombo, Sri Lanka</span>
+                    </div>
                 </div>
-                <a href="mailto:contact@abinesh.dev" class="btn btn-primary" style="display: inline-block;">Send Me an Email</a>
+                <a href="mailto:abinesht12@gmail.com" class="btn btn-primary" style="display: inline-block;">Send Me an Email</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Abinesh Thavendrarajah. All rights reserved.</p>
+        <p>&copy; 2025 Abinesh Thavendrarajah. All rights reserved.</p>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1051,11 +858,7 @@
             });
         });
 
-        // Add fade-in animation to elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
 
         const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
